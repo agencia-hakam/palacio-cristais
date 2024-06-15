@@ -86,7 +86,7 @@ body {
 }
 
 ::selection {
-  background-color: #f5af00;
+  background-color: #51b8e9;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3593,4 +3593,45 @@ h1 {
   max-width: 200px;
   height: auto;
   margin-right: 40px;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.trabalhos p {
+  font-family: "Poppins", sans-serif;
+}
+
+.contato {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary {
+  background-color: #51b8e9 !important;
+  border-radius: 50px;
+  border-color: #51b8e9 !important;
+  font-size: 16px;
+}
+
+.mapBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
 }

@@ -40,7 +40,7 @@
 <body class="body-scroll">
     <!-- Document Wrapper
 ============================================= -->
-    <div id="wrapper" class="wrapper clearfix about-wrapper">
+    <div id="wrapper" class="wrapper clearfix">
 
         <!-- Header
 ============================================= -->
@@ -80,40 +80,49 @@
                 </div>
             </nav>
         </header>
+        <section class="contato">
+            <div class="container mt-50">
+                <h2 class="blue text-left">CONTATO</h2>
+                <h4 class="blue text-left">Entre em contato com nossa equipe</h4>
+                <p class="blue text-left">Solicite já um orçamento personalizado para seu negócio</p>
+                <form action="processa_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
 
-        <div class="container about-content-section">
-            <h1>Quem Somos</h1>
-            <div class="row about-items">
-                <div class="col-md-8 about-text">
-                    <p>Somos líderes em serviços de limpeza e pintura de fachadas em São Paulo há mais de uma década,
-                        proporcionando excelência que vai além das expectativas dos nossos clientes. Nossa reputação é
-                        construída com base no comprometimento com qualidade, segurança e profissionalismo em cada
-                        projeto que realizamos.</p>
-                    <p>Nossa equipe é formada por profissionais altamente qualificados e dedicados, que se mantêm
-                        atualizados por meio de treinamentos. Dessa forma, estamos sempre por dentro das recentes
-                        técnicas e padrões da indústria, garantindo resultados superiores em todos os aspectos.</p>
-                    <p>Outra prioridade para nós é a segurança. Todos os nossos colaboradores utilizam Equipamentos de
-                        Proteção Individual (EPIs) em conformidade com as normas e regulamentações. Além disso, nossos
-                        materiais e equipamentos são inspecionados regularmente para garantir sua eficácia e a proteção
-                        durante a execução dos serviços.</p>
-                    <p>Com nossos clientes, o relacionamento é baseado em confiança. Por isso, nos esforçamos para
-                        construir laços sólidos e duradouros, fundamentados em transparência, resultados impecáveis e
-                        honestidade.</p>
-                    <p>Seja para revitalizar a imagem de um edifício comercial ou preservar um espaço residencial,
-                        estamos aqui para superar suas expectativas e transformar sua fachada em uma verdadeira obra de
-                        arte!</p>
-                </div>
-                <div class="col-md-4 about-images">
-                    <img src="./assets/images/about-1.png" class="img-fluid mb-4" alt="Imagem 1">
-                    <img src="./assets/images/about-2.png" class="img-fluid" alt="Imagem 2">
-                </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="estado">Estado:</label>
+                            <input type="text" class="form-control" id="estado" name="estado" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone/Celular:</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
             </div>
-            <a href="#" class="btn btn--primary btn--rounded mt-50">SOLICITE SEU ORÇAMENTO</a>
+        </section>
+        <div class="container mapBox">
+            <h4 class="blue text-center">ATENDEMOS A GRANDE SÃO PAULO</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.258959648815!2d-46.66576799999999!3d-23.4871803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef781560db6a5%3A0x7e92357d34041ffc!2sR.%20Bartolomeu%20Bermejo%2C%20110%20-%20Casa%20Verde%20Alta%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002565-000!5e0!3m2!1sen!2sbr!4v1718410852323!5m2!1sen!2sbr"
+                width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-
-
-
         <!-- cta2 
 ============================================= -->
         <section id="cta2" class="section cta cta-2 bg-theme">
@@ -180,6 +189,22 @@
 
     <!-- Footer Scripts
 ============================================= -->
+
+    <script>
+        document.getElementById('play-icon').addEventListener('click', function () {
+            var video = document.getElementById('background-video');
+            if (video.paused) {
+                video.play();
+                this.style.display = 'none'; // Hide the play icon when the video is playing
+            }
+        });
+
+        document.getElementById('background-video').addEventListener('pause', function () {
+            document.getElementById('play-icon').style.display = 'block'; // Show the play icon when the video is paused
+        });
+    </script>
+
+
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/functions.js"></script>

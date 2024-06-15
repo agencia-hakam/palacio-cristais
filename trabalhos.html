@@ -40,7 +40,7 @@
 <body class="body-scroll">
     <!-- Document Wrapper
 ============================================= -->
-    <div id="wrapper" class="wrapper clearfix about-wrapper">
+    <div id="wrapper" class="wrapper clearfix">
 
         <!-- Header
 ============================================= -->
@@ -81,38 +81,34 @@
             </nav>
         </header>
 
-        <div class="container about-content-section">
-            <h1>Quem Somos</h1>
-            <div class="row about-items">
-                <div class="col-md-8 about-text">
-                    <p>Somos líderes em serviços de limpeza e pintura de fachadas em São Paulo há mais de uma década,
-                        proporcionando excelência que vai além das expectativas dos nossos clientes. Nossa reputação é
-                        construída com base no comprometimento com qualidade, segurança e profissionalismo em cada
-                        projeto que realizamos.</p>
-                    <p>Nossa equipe é formada por profissionais altamente qualificados e dedicados, que se mantêm
-                        atualizados por meio de treinamentos. Dessa forma, estamos sempre por dentro das recentes
-                        técnicas e padrões da indústria, garantindo resultados superiores em todos os aspectos.</p>
-                    <p>Outra prioridade para nós é a segurança. Todos os nossos colaboradores utilizam Equipamentos de
-                        Proteção Individual (EPIs) em conformidade com as normas e regulamentações. Além disso, nossos
-                        materiais e equipamentos são inspecionados regularmente para garantir sua eficácia e a proteção
-                        durante a execução dos serviços.</p>
-                    <p>Com nossos clientes, o relacionamento é baseado em confiança. Por isso, nos esforçamos para
-                        construir laços sólidos e duradouros, fundamentados em transparência, resultados impecáveis e
-                        honestidade.</p>
-                    <p>Seja para revitalizar a imagem de um edifício comercial ou preservar um espaço residencial,
-                        estamos aqui para superar suas expectativas e transformar sua fachada em uma verdadeira obra de
-                        arte!</p>
-                </div>
-                <div class="col-md-4 about-images">
-                    <img src="./assets/images/about-1.png" class="img-fluid mb-4" alt="Imagem 1">
-                    <img src="./assets/images/about-2.png" class="img-fluid" alt="Imagem 2">
+        <section class="trabalhos container my-5">
+            <h1 class="text-left blue">Projetos em destaque</h1>
+            <p class="text-left blue mb-50">Confira nossos serviços de higienização e limpeza</p>
+            <div class="container">
+                <div class="photo-gallery">
+                    <div class="column">
+                        <div class="photo">
+                            <img src="./assets/images/trabalhos/Grupo de máscara 2.png" alt="" srcset="">
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/images/trabalhos/Grupo de máscara 7.png" alt="" srcset="">
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/images/trabalhos/Grupo de máscara 3.png" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="photo">
+                            <img src="./assets/images/trabalhos/Grupo de máscara 6.png" alt="" srcset="">
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/images/trabalhos/Grupo de máscara 5.png" alt="" srcset="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="#" class="btn btn--primary btn--rounded mt-50">SOLICITE SEU ORÇAMENTO</a>
-        </div>
-
-
-
+        </section>
 
         <!-- cta2 
 ============================================= -->
@@ -180,6 +176,22 @@
 
     <!-- Footer Scripts
 ============================================= -->
+
+    <script>
+        document.getElementById('play-icon').addEventListener('click', function () {
+            var video = document.getElementById('background-video');
+            if (video.paused) {
+                video.play();
+                this.style.display = 'none'; // Hide the play icon when the video is playing
+            }
+        });
+
+        document.getElementById('background-video').addEventListener('pause', function () {
+            document.getElementById('play-icon').style.display = 'block'; // Show the play icon when the video is paused
+        });
+    </script>
+
+
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/functions.js"></script>
