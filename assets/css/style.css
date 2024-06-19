@@ -3502,6 +3502,12 @@ textarea.form-control {
   margin-left: 30px;
 }
 
+.footer-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-item p {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -3634,4 +3640,39 @@ h1 {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 100px;
+}
+
+@media (max-width: 1217px) {
+  .video-text p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+}
+@media (max-width: 768px) {
+  .video-text p {
+    font-size: 1.2rem;
+    line-height: normal;
+    padding: 20px 20px;
+  }
+  #background-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
+  .video-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px 0;
+  }
+}
+
+.footer-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
