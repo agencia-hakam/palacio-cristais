@@ -40,7 +40,7 @@
 <body class="body-scroll">
     <!-- Document Wrapper
 ============================================= -->
-    <div id="wrapper" class="wrapper clearfix">
+    <v id="wrapper" class="wrapper clearfix">
 
         <!-- Header
 ============================================= -->
@@ -297,35 +297,34 @@
                 <!-- .row end -->
             </div>
             <!-- .container end -->
-    </div>
-    <!-- .footer bar end -->
-    </footer>
-    <!-- #footer9 end -->
+        </footer>
+        <!-- .footer bar end -->
+        <!-- #footer9 end -->
 
-    </div>
-    <!-- #wrapper end -->
+        </div>
+        <!-- #wrapper end -->
 
-    <!-- Footer Scripts
+        <!-- Footer Scripts
 ============================================= -->
 
-    <script>
-        document.getElementById('play-icon').addEventListener('click', function () {
-            var video = document.getElementById('background-video');
-            if (video.paused) {
-                video.play();
-                this.style.display = 'none'; // Hide the play icon when the video is playing
-            }
-        });
+        <script>
+            document.getElementById('play-icon').addEventListener('click', function () {
+                var video = document.getElementById('background-video');
+                if (video.paused) {
+                    video.play();
+                    this.style.display = 'none'; // Hide the play icon when the video is playing
+                }
+            });
 
-        document.getElementById('background-video').addEventListener('pause', function () {
-            document.getElementById('play-icon').style.display = 'block'; // Show the play icon when the video is paused
-        });
-    </script>
+            document.getElementById('background-video').addEventListener('pause', function () {
+                document.getElementById('play-icon').style.display = 'block'; // Show the play icon when the video is paused
+            });
+        </script>
 
 
-    <script src="assets/js/jquery-2.2.4.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/functions.js"></script>
+        <script src="assets/js/jquery-2.2.4.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/functions.js"></script>
 </body>
 
 </html>
