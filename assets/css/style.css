@@ -3443,10 +3443,10 @@ textarea.form-control {
 }
 .video-text p {
   color: #fff;
-  font-size: 32px;
-  line-height: 70px;
+  font-size: 27px;
   font-family: "Poppins", sans-serif;
   padding: 20px 80px;
+  line-height: 2;
 }
 
 #background-video {
@@ -3505,7 +3505,7 @@ textarea.form-control {
 .footer-item a {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-item p {
@@ -3575,6 +3575,7 @@ h1 {
 @media (max-width: 768px) {
   .service-item img {
     max-width: 100px !important;
+    padding: 5px;
   }
   .service-item h2 {
     font-size: 1.5rem;
@@ -3617,9 +3618,13 @@ h1 {
 }
 
 .service-item img {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
   margin-right: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: solid #f5af00 2px;
+  border-radius: 20%;
 }
 
 .photo-gallery {
@@ -3747,4 +3752,8 @@ h1 {
   .footer-item p {
     font-size: 10px;
   }
+}
+
+.feature--icon img {
+  width: 65px;
 }
